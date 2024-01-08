@@ -60,20 +60,18 @@ export async function getProject() {
       'logo': logo.asset -> url,
     }`
   )
-  
 }
 
-export async function getSingleProject(slug:string) {
+export async function getSingleProject(slug: string) {
   return client.fetch(
-    groq`*[_type == 'project' && slug.current == $slug][0]{
+    groq`*[_type == "project" && slug.current == $slug][0]{
       _id,
       name,
       projectUrl,
-      coverImage {alt, 'image':asset->url},
+      coverImage { alt, "image": asset->url },
       tagline,
       description
     }`,
-    {slug}
-  )
-  
+    { slug }
+  );
 }
