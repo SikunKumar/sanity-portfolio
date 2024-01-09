@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: 'A personal portfolio site built with Sanity and Next.js',
   openGraph: {
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1689893059/docs/og.png",
+      "https://res.cloudinary.com/dsa9wojy1/image/upload/v1704821354/Sujit_Gouda_d2xx1p.jpg",
   },
 }
 
